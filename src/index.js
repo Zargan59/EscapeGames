@@ -3,18 +3,19 @@ import ReactDOM from "react-dom/client";
 // import "./index.css";
 import Body from "./Pages/Body";
 import reportWebVitals from "./reportWebVitals";
+import { HashRouter } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/Home"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={< HomePage />} />
         <Route path="/Voyage-au-centre-du-corps" element={<Body /> }  />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
