@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 function App() {
 
   let initialTime = 15
-  let hurryUpTime = 14
+  let hurryUpTime = 5
   const [time, setTime] = useState(initialTime*60)
   const [pause, setPause] = useState(true)
   const [isRed, setIsRed] = useState(false)
