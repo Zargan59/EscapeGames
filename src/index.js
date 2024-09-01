@@ -16,12 +16,12 @@ import HomePage from "./Pages/Home"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename="/" >
       <Routes>
         <Route path="/" element={< HomePage />} />
         <Route path="/Voyage-au-centre-du-corps" element={<Body /> }  />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

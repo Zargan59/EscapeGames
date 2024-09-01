@@ -67,6 +67,9 @@ export default function Modale({setIsOpen, malus, type, setType}){
             })
             if(correctCard==0){
                 DisplayMessage("Cette carte n'existe pas");
+                setCardQuestion("")
+                console.log(response);
+                setResponse([])
             }
         }
 

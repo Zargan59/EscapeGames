@@ -3,7 +3,6 @@ import { useState } from "react"
 
 export default function Message({ pickCard, isCorrect, score, maxScore, message,explication, CheckGoodAnswer, type, response, DisplayMessage,correctAnswer,showExplication,handleNextQuestion }){
 
-    console.log(response);
 
     if(type == "code"){
         return(
