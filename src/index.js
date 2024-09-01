@@ -7,23 +7,23 @@ import { HashRouter } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/Home"
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-      <HomePage />
-  </React.StrictMode>
-);
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
 //   <React.StrictMode>
-//     <HashRouter>
-//       <Routes>
-//         <Route path="/" element={< HomePage />} />
-//         <Route path="/Voyage-au-centre-du-corps" element={<Body /> }  />
-//       </Routes>
-//     </HashRouter>
+//       <HomePage />
 //   </React.StrictMode>
 // );
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={< HomePage />} />
+        <Route path="/Voyage-au-centre-du-corps" element={<Body /> }  />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
