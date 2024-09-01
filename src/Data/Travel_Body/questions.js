@@ -1,6 +1,6 @@
 export const questions = [
     {
-        card: 1 ,
+        card: 70 ,
         questions: [
             {
                 1 : "La flore intestinale (population de microorganismes vivant dans l’intestin) est composée de ?",
