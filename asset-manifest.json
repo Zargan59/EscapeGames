@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/EscapeGames/static/css/main.7e36d064.css",
-    "main.js": "/EscapeGames/static/js/main.893590e6.js",
+    "main.js": "/EscapeGames/static/js/main.b0f4a029.js",
     "static/js/453.192da550.chunk.js": "/EscapeGames/static/js/453.192da550.chunk.js",
     "static/media/Alice.jpg": "/EscapeGames/static/media/Alice.0f2b81ddedce18b8a1a9.jpg",
     "static/media/Body_BG.jpg": "/EscapeGames/static/media/Body_BG.3eab3fe6d111a1d91d2b.jpg",
     "static/media/Background.webp": "/EscapeGames/static/media/Background.e7125232e70a08bd3480.webp",
     "index.html": "/EscapeGames/index.html",
     "main.7e36d064.css.map": "/EscapeGames/static/css/main.7e36d064.css.map",
-    "main.893590e6.js.map": "/EscapeGames/static/js/main.893590e6.js.map",
+    "main.b0f4a029.js.map": "/EscapeGames/static/js/main.b0f4a029.js.map",
     "453.192da550.chunk.js.map": "/EscapeGames/static/js/453.192da550.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e36d064.css",
-    "static/js/main.893590e6.js"
+    "static/js/main.b0f4a029.js"
   ]
 }
