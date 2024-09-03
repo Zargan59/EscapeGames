@@ -1,13 +1,13 @@
 import KeyboardKey from "./keyboard/keyboardKey.jsx"
 import "./keyboard/keyboardKey.jsx"
 import {useEffect, useState} from "react"
-import { codeBody } from "../Data/Travel_Body/code.js"
+// import { codeBody } from "../Data/Travel_Body/code.js"
 import { tips } from "../Data/Travel_Body/tips.js"
-import {questions} from "../Data/Travel_Body/questions.js"
+// import {questions} from "../Data/Travel_Body/questions.js"
 import Message from "./modalMessage.jsx"
 
 //Besoin de rajouter 
-export default function Modale({setIsOpen, malus, type, setType}){
+export default function Modale({setIsOpen, malus, type, setType, dataCode, dataQuestion}){
     const [number, setNumber] =useState("")
     const [message, setMessage]= useState("")
     const [isMessage, setIsMessage] = useState(false)
@@ -40,7 +40,7 @@ export default function Modale({setIsOpen, malus, type, setType}){
 
         if(type==="code"){
             let codeMatch =  0   
-            codeBody.find((element)=>{
+            dataCode.find((element)=>{
                 if(element.code == number ){
                     codeMatch++
                     DisplayMessage(element.message)
@@ -55,7 +55,7 @@ export default function Modale({setIsOpen, malus, type, setType}){
         else if(type === "questions"){
             let correctCard = 0
 
-            questions.find(element=>{
+            dataQuestion.find(element=>{
                 //Si la carte est correct, j'affiche la 1er question
                 if(element.card == number){
                     correctCard++

@@ -1,0 +1,155 @@
+.mainContent{
+    margin: 0;
+    height: 100vh;
+}
+
+
+.homeIcon{
+    margin: 30px 0;
+    font-size: 50px ;
+    cursor: pointer;
+    color: white;
+}
+
+.chronoContent{
+    width: 180px;
+    padding: 10px 0 ;
+}
+
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+
+.buttonShadow{
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.6);
+}
+.iconButton{
+    font-size: 32px;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.207);
+}
+
+.buttonCloseContent{
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: 600 ;
+    z-index: 1;
+    opacity: 1;
+    height: min-content;
+}
+
+.messageContent{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.codeContent{
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+.modalContent{
+    position: relative;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    
+
+    padding: 20px 30px;
+    margin: 150px auto;
+    width: 350px;
+    max-height: 70vh;
+    min-height: 20vh;
+    
+
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.mainButtonDisplay{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainButtonContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mainButtonContent h3{
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6) ;
+}
+
+.codeMessageContent{
+    margin: 20px 0;
+}
+.modalScreen{
+    width: 150px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.keyboardKey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ButtonDisposition{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    height: 80vh;
+}
+
+.leftAlign{
+    padding-left: 10px;
+}
+
+.keyboardContent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    justify-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 250px;
+    color: white;
+}

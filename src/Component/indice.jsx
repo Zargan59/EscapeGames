@@ -5,7 +5,7 @@ import { faPause, faPlay, faSkullCrossbones, faClipboardQuestion } from "@fortaw
 import Modale from "./modal"
 import MainButton from "./button"
 
-export default function Indice({handlePause, pause ,malus}){
+export default function Indice({handlePause, pause ,malus,dataCode, dataQuestion}){
 
     const [isOpen, setIsOpen] = useState(false)
     const [hintIsRequired, setIsHintRequired]= useState(false)
@@ -42,7 +42,7 @@ export default function Indice({handlePause, pause ,malus}){
                 <MainButton functionclick={OpenModal} icon={faClipboardQuestion}  description="Questions" type="questions" />
             </div>
             <div className={isOpen?"background":"background hidde"}>
-                <Modale setIsOpen={setIsOpen} malus={malus} type = {type} setType={setType}/>
+                <Modale setIsOpen={setIsOpen} malus={malus} type = {type} setType={setType} dataCode={dataCode} dataQuestion={dataQuestion} />
             </div>
             <div className={hintIsRequired ? "background" : "backgound hidde"}>
                 <div className="modalContent hintContent" >

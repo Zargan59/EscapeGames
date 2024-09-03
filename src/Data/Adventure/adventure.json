@@ -1,38 +1,20 @@
 [
     {
-        "title" : "Voyage au centre du corps humain",
-        "cover" : "E:/Cassou/escapegame/src/Image/Body_BG.jpg",
-        "backGround" : "",
-        "isPublished" : "true",
-        "class": [
-            {
-                "chrono" : "",
-                "start" : ""
-            }
-        ],
-        "data" : [
-            {
-                "code" : "",
-                "questions" : ""
-            }
-        ]
+        "link" : "/Voyage-au-centre-du-corps",
+        "title" : "Tutoriel - Corps Humain",
+        "name" : "travelBodyAdventure",
+        "isPublished" : true
     },
     {
+        "link" : "/AliceAdventure",
         "title" : "Alice et le gras",
-        "cover" : "",
-        "backGround" : "",
-        "isPublished" : "true",
-        "class": [
-            {
-                "chrono" : "",
-                "start" : ""
-            }
-        ],
-        "data" : [
-            {
-                "code" : "",
-                "questions" : ""
-            }
-        ]
+        "name" : "aliceAdventure",
+        "isPublished" : true
+    },
+    {
+        "link" : "/Max&co",
+        "title" : "Voyage au centre du corps humain",
+        "name" : "travelBodyAdventure",
+        "isPublished" : false
     }
 ]

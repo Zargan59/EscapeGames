@@ -2,11 +2,14 @@ import "../Style/Body/body.css";
 import Chrono from "../Component/chrono";
 import Button from "../Component/indice";
 import { useState, useEffect } from "react";
-
-function App() {
+import "../Data/Travel_Body/code"
+import { questions } from "../Data/Travel_Body/questions";
+import { code } from "../Data/Travel_Body/code";
+export default function BodyAdventure() {
 
   let initialTime = 15
   let hurryUpTime = 5
+
   const [time, setTime] = useState(initialTime*60)
   const [pause, setPause] = useState(true)
   const [isRed, setIsRed] = useState(false)
@@ -69,14 +72,14 @@ function App() {
 
 
   return (
-    <div className="bodyContent">
+    <div className="mainContent bodyContent">
 
-      <div className="appliContent">
+      <div className="appliContent ">
         <Chrono time={time} formatTime={formatTime} isRed={isRed} hurryUp={hurryUpTime*60} />
-        <Button handlePause = {handlePause} pause={pause} malus={malus} />
+        <Button handlePause = {handlePause} pause={pause} malus={malus} dataCode={code} dataQuestion={questions} />
       </div>
     </div>
   );
 }
 
-export default App;
+

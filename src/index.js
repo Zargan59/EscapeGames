@@ -6,13 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { HashRouter } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/Home"
+import AliceAdventure from "./Pages/Alice";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//       <HomePage />
-//   </React.StrictMode>
-// );
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -20,6 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={< HomePage />} />
         <Route path="/Voyage-au-centre-du-corps" element={<Body /> }  />
+        <Route path="/AliceAdventure" element={<AliceAdventure /> }  />
+
       </Routes>
     </HashRouter>
   </React.StrictMode>
