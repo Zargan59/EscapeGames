@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/EscapeGames/static/css/main.580c54a8.css",
-    "main.js": "/EscapeGames/static/js/main.a52c8206.js",
+    "main.css": "/EscapeGames/static/css/main.29ad2ce5.css",
+    "main.js": "/EscapeGames/static/js/main.a18d1702.js",
     "static/js/453.192da550.chunk.js": "/EscapeGames/static/js/453.192da550.chunk.js",
     "static/media/Alice.jpg": "/EscapeGames/static/media/Alice.0f2b81ddedce18b8a1a9.jpg",
     "static/media/Body_BG.jpg": "/EscapeGames/static/media/Body_BG.3eab3fe6d111a1d91d2b.jpg",
     "static/media/Background.webp": "/EscapeGames/static/media/Background.e7125232e70a08bd3480.webp",
     "static/media/AliceBackGround.webp": "/EscapeGames/static/media/AliceBackGround.2fc1df1a177fd9a0febd.webp",
+    "static/media/Buzzer.mp3": "/EscapeGames/static/media/Buzzer.79d95f3dc293ad74aedf.mp3",
     "index.html": "/EscapeGames/index.html",
-    "main.580c54a8.css.map": "/EscapeGames/static/css/main.580c54a8.css.map",
-    "main.a52c8206.js.map": "/EscapeGames/static/js/main.a52c8206.js.map",
+    "main.29ad2ce5.css.map": "/EscapeGames/static/css/main.29ad2ce5.css.map",
+    "main.a18d1702.js.map": "/EscapeGames/static/js/main.a18d1702.js.map",
     "453.192da550.chunk.js.map": "/EscapeGames/static/js/453.192da550.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.580c54a8.css",
-    "static/js/main.a52c8206.js"
+    "static/css/main.29ad2ce5.css",
+    "static/js/main.a18d1702.js"
   ]
 }
