@@ -7,9 +7,6 @@ export default function HomePage (){
     /// son du bouton de buzzer
     /// Mettre en place le système d'indice
     // Rajouter dans les indésirables des icones le path 
-    // Pour les questions agrandir l'encadrer en fonction du volume du texte
-    // Mieux voir le bonne réponse/Mauvaise réponse
-    //
 
 
     return(

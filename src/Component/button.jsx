@@ -5,7 +5,7 @@ export default function MainButton({functionclick,icon,chrono,pause, description
         return(
             <div className="mainButtonContent ">
                 <button onClick={functionclick} id={type} className="button buttonShadow"><FontAwesomeIcon icon={icon} className="iconButton" /> </button>
-                <h3>{description} </h3>
+                <h3 >{description} </h3>
             </div>
         )
     }

@@ -29,14 +29,14 @@ export default function Message({ pickCard, isCorrect, score, maxScore, message,
             <div>
                  {isCorrect? <p>Bonne réponse</p> 
                  : 
-                 <p>Mauvaise réponse</p>
+                 <p className="isCorrectAnswer" >Mauvaise réponse</p>
                  }
-                <p>{showExplication}</p>
+                <p className="explication" >{showExplication}</p>
                 <button className="nextQuestion" onClick={handleNextQuestion}>Suivant</button>
             </div>
             : 
             <div>
-                <p>{message} </p>
+                <p className="question" >{message} </p>
                 <div className="answerContent">
                     {response.map((element, index) => <Displayquestion key={index} index={index} element={element} handleClick={CheckGoodAnswer}  /> )}
                 </div>

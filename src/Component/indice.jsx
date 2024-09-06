@@ -1,5 +1,4 @@
 import { useState } from "react"
-import allIndices from "../indice"
 import { faLightbulb, faBookOpen, faLockOpen  } from "@fortawesome/free-solid-svg-icons"
 import { faPause, faPlay, faSkullCrossbones, faClipboardQuestion } from "@fortawesome/free-solid-svg-icons"
 import Modale from "./modal"
@@ -14,9 +13,11 @@ export default function Indice({handlePause, pause ,malus,dataCode, dataQuestion
     const OpenModal = (e)=>{
         if(!pause){
             let button = e.target.id
+
             if(!button){
                 button = e.target.parentElement.parentElement.id
             }
+
             setIsOpen(true)
             setType(button)
         }

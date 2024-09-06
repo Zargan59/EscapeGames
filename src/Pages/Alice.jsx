@@ -2,7 +2,8 @@ import "../Style/Alice/alice.css";
 import "../Style/main.css"
 import Chrono from "../Component/chrono";
 import Button from "../Component/indice";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import BuzzerSound from "../Sound/Buzzer.mp3"
 
 export default function AliceAdventure() {
 
@@ -11,17 +12,23 @@ export default function AliceAdventure() {
   const [time, setTime] = useState(initialTime*60)
   const [pause, setPause] = useState(true)
   const [isRed, setIsRed] = useState(false)
+  const audioRef = useRef(null)
 
   const malus = (amount)=>{
+    console.log("Oui");
     if(amount !== "number" ){
       amount = 60
     }
     if(!pause){
         setTime(prevTime => Math.max(prevTime - amount))
         setIsRed(true)
+        console.log("buzz");
+
         setTimeout(()=>{
+          console.log("oUI");
             setIsRed(false)
         },200)
+       audioRef.current.play()
     }
   }
   const handlePause = ()=>{
@@ -57,13 +64,13 @@ export default function AliceAdventure() {
     }, [pause])
 
 
-
     //Button => Envoyer le script pour le code et pour les questions
   return (
     <div className="mainContent aliceContent">
 
       <div className="appliContent">
         <Chrono time={time} formatTime={formatTime} isRed={isRed} hurryUp={hurryUpTime*60} />
+        <audio ref={audioRef} src={BuzzerSound} ></audio>
         <Button handlePause = {handlePause} pause={pause} malus={malus} />
       </div>
     </div>

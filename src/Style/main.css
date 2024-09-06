@@ -102,7 +102,7 @@
 }
 .mainButtonContent h3{
    color: rgb(255, 255, 255);
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6) ;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) ;
 }
 
 .codeMessageContent{
@@ -152,4 +152,16 @@
     margin: auto;
     width: 250px;
     color: white;
+}
+
+.question{
+    font-weight: 400;
+}
+
+.explication{
+    font-weight: 400;
+}
+
+.isCorrectAnswer{
+    margin-bottom: 20px;
 }
