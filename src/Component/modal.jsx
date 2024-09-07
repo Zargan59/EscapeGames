@@ -5,6 +5,9 @@ import {useEffect, useState} from "react"
 import { tips } from "../Data/Travel_Body/tips.js"
 // import {questions} from "../Data/Travel_Body/questions.js"
 import Message from "./modalMessage.jsx"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLock, faQuestion } from "@fortawesome/free-solid-svg-icons"
+
 
 //Besoin de rajouter 
 export default function Modale({setIsOpen, malus, type, setType, dataCode, dataQuestion}){
@@ -202,6 +205,9 @@ export default function Modale({setIsOpen, malus, type, setType, dataCode, dataQ
                     </div>
                      :
                     <div className="codeContent">
+                        
+                       { type=="code"? <FontAwesomeIcon className="iconModal" icon={faLock} /> :
+                        <FontAwesomeIcon className="iconModal" icon={faQuestion} />}
                         <div className="modalScreen">
                             <p>{number} </p>
                         </div>
