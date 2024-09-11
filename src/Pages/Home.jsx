@@ -4,7 +4,6 @@ import ChooseAdventure from "../Component/chooseAdventure"
 export default function HomePage (){
     const adventures = require("../Data/Adventure/adventure.json")
 
-    /// son du bouton de buzzer
     /// Mettre en place le système d'indice
     // Rajouter dans les indésirables des icones le path 
 

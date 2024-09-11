@@ -1,10 +1,14 @@
 import "../Style/Body/body.css";
 import Chrono from "../Component/chrono";
 import Button from "../Component/indice";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../Data/Travel_Body/code"
 import { questions } from "../Data/Travel_Body/questions";
 import { code } from "../Data/Travel_Body/code";
+import BuzzerSound from "../Sound/Buzzer.mp3"
+
+
+
 export default function BodyAdventure() {
 
   let initialTime = 15
@@ -13,6 +17,8 @@ export default function BodyAdventure() {
   const [time, setTime] = useState(initialTime*60)
   const [pause, setPause] = useState(true)
   const [isRed, setIsRed] = useState(false)
+  const audioRef = useRef(null)
+
 
 //   const negatifTime = ()=>{
 //     setIsRed(true)
@@ -31,8 +37,11 @@ export default function BodyAdventure() {
         setTime(prevTime => Math.max(prevTime - amount))
         setIsRed(true)
         setTimeout(()=>{
-            setIsRed(false)
-        },200)
+          setIsRed(false)
+
+        },1500)
+        audioRef.current.play()
+
     }
   }
   const handlePause = ()=>{
@@ -76,6 +85,7 @@ export default function BodyAdventure() {
 
       <div className="appliContent ">
         <Chrono time={time} formatTime={formatTime} isRed={isRed} hurryUp={hurryUpTime*60} />
+        <audio ref={audioRef} src={BuzzerSound} ></audio>
         <Button handlePause = {handlePause} pause={pause} malus={malus} dataCode={code} dataQuestion={questions} />
       </div>
     </div>

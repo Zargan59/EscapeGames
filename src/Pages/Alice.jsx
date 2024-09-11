@@ -22,12 +22,10 @@ export default function AliceAdventure() {
     if(!pause){
         setTime(prevTime => Math.max(prevTime - amount))
         setIsRed(true)
-        console.log("buzz");
 
         setTimeout(()=>{
-          console.log("oUI");
             setIsRed(false)
-        },200)
+        },1500)
        audioRef.current.play()
     }
   }
