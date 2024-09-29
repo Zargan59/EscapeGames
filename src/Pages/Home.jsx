@@ -17,8 +17,6 @@ export default function HomePage (){
                         <ChooseAdventure key={index} link={adventure.link} name={adventure.name} title ={adventure.title} isPublished={adventure.isPublished} />
                     ))
                 }
-            {/* <ChooseAdventure link="/Voyage-au-centre-du-corps" name=" adventure body" title='Voyage au centre du corps humain' />
-            <ChooseAdventure link="/Alice" name=" adventure alice" title='Alice et le gras' /> */}
             </div>
         </div>
     )
